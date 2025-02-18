@@ -44,6 +44,7 @@ CocoCorp est une entreprise innovante proposant des solutions digitales responsa
 ## ♿ Accessibilité
 
 ![Score d'accessibilité](assets/images/accessibility-score.png)
+![Test validator.w3 ](assets/images/validatorW3.png)
 
 - Navigation au clavier optimisée
 - ARIA labels et landmarks
@@ -62,11 +63,13 @@ CocoCorp est une entreprise innovante proposant des solutions digitales responsa
 
 2. Ouvrez le fichier `index.html` dans votre navigateur.
 
+Sinon vous pouvez directement acceder a la page en ligne : [CocoCorp](https://coco-bd.github.io/Accessibilite/)
+
 ## 📸 Captures d'écran
 
 ### Page d'accueil
 
-![Page d'accueil](assets/images/home.png)
+![Page d'accueil](assets/images/preview.png)
 
 ### Section Valeurs
 
