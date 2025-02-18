@@ -1,3 +1,9 @@
+# Educational Project
+
+### Anything is fictive
+
+This project is a landing page for a company that offers eco-responsible digital solutions. It includes a video presentation, a comparison table of the different offers, and a contact form.
+
 # EcoSuite by CocoCorp - Gestion Éco-responsable 🌱
 
 EcoSuite est une suite logicielle de gestion d'entreprise éco-responsable qui permet de :
