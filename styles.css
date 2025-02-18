@@ -422,7 +422,6 @@ address a:focus {
 .video-container {
   max-width: 800px;
   margin: 2rem auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -431,19 +430,12 @@ video {
   display: block;
   width: 100%;
   height: auto;
-  /* Assurons-nous que la vidéo est nette */
-  filter: none;
-  /* Supprimons tout effet de transparence */
-  opacity: 1;
+  background: transparent;
 }
 
-/* Limitons le style des contrôles uniquement à la barre de contrôle */
+/* Reset tous les styles de contrôles vidéo */
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure,
 video::-webkit-media-controls-panel {
-  background-color: rgba(43, 51, 63, 0.7);
-  padding: 0.5rem;
-}
-
-/* Supprimons le style global des contrôles */
-video::-webkit-media-controls {
-  background-color: transparent;
+  background: transparent;
 }
