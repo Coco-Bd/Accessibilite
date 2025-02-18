@@ -434,3 +434,81 @@ video {
   height: auto;
   background: transparent;
 }
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-titre {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-features {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.hero-features ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-features li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:first-child {
+  background: #4a90e2;
+  color: white;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border: 2px solid #4a90e2;
+  color: #4a90e2;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
