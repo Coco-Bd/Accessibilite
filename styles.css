@@ -432,5 +432,5 @@ video {
   display: block;
   width: 100%;
   height: auto;
-  background: #000; /* Fond noir pour meilleur contraste */
+  background: transparent;
 }
