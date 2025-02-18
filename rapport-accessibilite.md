@@ -117,5 +117,5 @@ Le site CocoCorp démontre un bon niveau d'accessibilité avec une conformité W
 
 ---
 
-_Rapport généré par [Nom de l'Auditeur]_
-_Contact : auditeur@example.com_
+\_Rapport généré par Corentin BEDO
+\_Contact : corentin.bedo@ynov.com
