@@ -10,6 +10,12 @@
     />
     <title>EcoSuite by CocoCorp - Logiciel de Gestion Éco-responsable</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/video-poster.webp"
+      type="image/webp"
+    />
   </head>
   <body>
     <!-- En-tête du site -->
@@ -182,29 +188,38 @@
       <section id="presentation" aria-labelledby="presentation-titre">
         <h2 id="presentation-titre">Présentation de CocoCorp</h2>
         <div class="video-container">
-          <video
-            id="presentation-video"
-            controls
-            width="100%"
-            preload="metadata"
-            poster="assets/images/video-poster.png"
-            playsinline
-            autoplay
-            muted
-          >
+          <picture>
             <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
-              type="video/mp4"
+              srcset="assets/images/video-poster.webp"
+              type="image/webp"
             />
-            <track
-              label="Français"
-              kind="subtitles"
-              srclang="fr"
-              src="assets/videos/subtitles-fr.vtt"
-              default
-            />
-            <p>Votre navigateur ne prend pas en charge la lecture de vidéos.</p>
-          </video>
+            <source srcset="assets/images/video-poster.png" type="image/png" />
+            <video
+              id="presentation-video"
+              controls
+              width="100%"
+              preload="metadata"
+              poster="assets/images/video-poster.png"
+              playsinline
+              autoplay
+              muted
+            >
+              <source
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                type="video/mp4"
+              />
+              <track
+                label="Français"
+                kind="subtitles"
+                srclang="fr"
+                src="assets/videos/subtitles-fr.vtt"
+                default
+              />
+              <p>
+                Votre navigateur ne prend pas en charge la lecture de vidéos.
+              </p>
+            </video>
+          </picture>
         </div>
       </section>
 
