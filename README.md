@@ -29,7 +29,7 @@ CocoCorp est une entreprise innovante proposant des solutions digitales responsa
 - **Design Responsive** : Compatible avec tous les appareils
 - **Accessibilité optimisée** : WCAG 2.1 AA compliant
 - **Performance optimale** : Utilisation de SVG pour les icônes
-- **Formulaire intelligent** : Validation en temps réel
+- **Vidéo de présentation** : Sous-titrée en français et anglais
 - **Tableau comparatif** : Vue claire des différentes offres
 - **Animations subtiles** : Amélioration de l'expérience utilisateur
 
@@ -82,10 +82,6 @@ Sinon vous pouvez directement acceder a la page en ligne : [CocoCorp](https://co
 ### Formulaire de contact
 
 ![Formulaire](assets/images/contact.png)
-
-### Version mobile
-
-![Version mobile](assets/images/mobile.png)
 
 ## 📄 Licence
 
