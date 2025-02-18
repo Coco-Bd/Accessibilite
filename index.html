@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page vitrine d'une entreprise innovante spécialisée dans les solutions digitales responsables"
+    />
+    <title>Entreprise CocoCorp - Solutions Digitales Responsables</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- En-tête du site -->
+    <header>
+      <!-- Logo et informations de contact -->
+      <div class="header-content">
+        <!-- Logo CocoCorp avec animation SVG -->
+        <div class="logo">
+          <svg
+            width="150"
+            height="50"
+            viewBox="0 0 150 50"
+            fill="none"
+            role="img"
+            aria-label="Logo CocoCorp"
+          >
+            <!-- Cercle extérieur du logo -->
+            <path
+              d="M30 25c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 16.716 6.716 10 15 10c8.284 0 15 6.716 15 15z"
+              fill="#4A90E2"
+            />
+            <!-- Cercle intérieur du logo -->
+            <path
+              d="M25 25c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10z"
+              fill="#357ABD"
+            />
+            <!-- Texte du logo -->
+            <text
+              x="40"
+              y="32"
+              fill="#333333"
+              font-size="24"
+              font-weight="bold"
+            >
+              CocoCorp
+            </text>
+            <text x="40" y="45" fill="#666666" font-size="12">
+              Digital Solutions
+            </text>
+          </svg>
+        </div>
+        <!-- Date de mise à jour -->
+        <div class="contact-info">
+          <p>
+            Dernière mise à jour :
+            <time datetime="2024-03-21">21 mars 2024</time>
+          </p>
+        </div>
+      </div>
+      <!-- Navigation principale -->
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#valeurs">Nos valeurs</a></li>
+          <li><a href="#comparatif">Comparatif</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+      <!-- Section Nos Valeurs -->
+      <section id="valeurs" aria-labelledby="valeurs-titre">
+        <h1 id="valeurs-titre">Nos valeurs</h1>
+        <div class="valeurs-container">
+          <article tabindex="0">
+            <svg
+              role="img"
+              aria-labelledby="innovation-title innovation-desc"
+              class="icon"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              tabindex="0"
+            >
+              <title id="innovation-title">Icône d'innovation</title>
+              <desc id="innovation-desc">
+                Un engrenage représentant l'innovation technologique
+              </desc>
+              <path
+                fill="currentColor"
+                d="M19 11.5c0 .17-.02.33-.05.5h2.05v1h-2.05c.03.17.05.33.05.5 0 .85-.35 1.62-.92 2.17v.83h-1v-.46A2.994 2.994 0 0 1 16 17a2.994 2.994 0 0 1-1.08-.21v.71h-1v-.83A2.99 2.99 0 0 1 13 14.5c0-.17.02-.33.05-.5h-2.05v-1h2.05c-.03-.17-.05-.33-.05-.5 0-.85.35-1.62.92-2.17V9.5h1v.46c.33-.14.69-.21 1.08-.21.39 0 .75.07 1.08.21V9.5h1v.83c.57.55.92 1.32.92 2.17zM16 13.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+              />
+            </svg>
+            <h2>Innovation</h2>
+            <p>Notre approche innovante redéfinit les standards du digital</p>
+          </article>
+
+          <article tabindex="0">
+            <svg
+              role="img"
+              aria-labelledby="durabilite-title durabilite-desc"
+              class="icon"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              tabindex="0"
+            >
+              <title id="durabilite-title">Icône de durabilité</title>
+              <desc id="durabilite-desc">
+                Un symbole circulaire représentant le cycle durable
+              </desc>
+              <path
+                fill="currentColor"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"
+              />
+              <path
+                fill="currentColor"
+                d="M12 5.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0 10c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"
+              />
+            </svg>
+            <h2>Durabilité</h2>
+            <p>Nous créons des solutions responsables et durables</p>
+          </article>
+
+          <article tabindex="0">
+            <svg
+              role="img"
+              aria-labelledby="qualite-title qualite-desc"
+              class="icon"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              tabindex="0"
+            >
+              <title id="qualite-title">Icône de qualité</title>
+              <desc id="qualite-desc">
+                Une coche représentant la qualité et l'excellence
+              </desc>
+              <path
+                fill="currentColor"
+                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+              />
+            </svg>
+            <h2>Qualité</h2>
+            <p>L'excellence est au cœur de chacune de nos réalisations</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section Tableau Comparatif -->
+      <section id="comparatif" aria-labelledby="comparatif-titre">
+        <h2 id="comparatif-titre">Tableau comparatif</h2>
+        <table>
+          <caption>
+            Comparaison de nos services
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" tabindex="0">Service</th>
+              <th scope="col" tabindex="0">Basic</th>
+              <th scope="col" tabindex="0">Pro</th>
+              <th scope="col" tabindex="0">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" tabindex="0">Projets simultanés</th>
+              <td tabindex="0">2</td>
+              <td tabindex="0">10</td>
+              <td tabindex="0">Illimité</td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Espace stockage</th>
+              <td tabindex="0">10 Go</td>
+              <td tabindex="0">100 Go</td>
+              <td tabindex="0">500 Go</td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Support client</th>
+              <td tabindex="0">Email</td>
+              <td tabindex="0">Email & Téléphone</td>
+              <td tabindex="0">24/7 Dédié</td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Utilisateurs</th>
+              <td tabindex="0">1</td>
+              <td tabindex="0">5</td>
+              <td tabindex="0">Sur mesure</td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">API Access</th>
+              <td tabindex="0">
+                <span
+                  class="cross"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Non inclus dans l'offre Basic"
+                  >✗</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Pro"
+                  >✓</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Enterprise"
+                  >✓</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Support prioritaire</th>
+              <td tabindex="0">
+                <span
+                  class="cross"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Non inclus dans l'offre Basic"
+                  >✗</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="cross"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Non inclus dans l'offre Pro"
+                  >✗</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Enterprise"
+                  >✓</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Personnalisation</th>
+              <td tabindex="0">
+                <span
+                  class="cross"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Non inclus dans l'offre Basic"
+                  >✗</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Pro"
+                  >✓</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Enterprise"
+                  >✓</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">Analytics avancées</th>
+              <td tabindex="0">
+                <span
+                  class="cross"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Non inclus dans l'offre Basic"
+                  >✗</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Pro"
+                  >✓</span
+                >
+              </td>
+              <td tabindex="0">
+                <span
+                  class="check"
+                  tabindex="0"
+                  role="img"
+                  aria-label="Inclus dans l'offre Enterprise"
+                  >✓</span
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" tabindex="0">Prix mensuel</th>
+              <td tabindex="0">29€</td>
+              <td tabindex="0">99€</td>
+              <td tabindex="0">Sur devis</td>
+            </tr>
+            <tr>
+              <th scope="row" tabindex="0">
+                Prix annuel <span class="promo">-20%</span>
+              </th>
+              <td tabindex="0">278€</td>
+              <td tabindex="0">950€</td>
+              <td tabindex="0">Sur devis</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Section Formulaire de Contact -->
+      <section id="contact" aria-labelledby="contact-titre">
+        <h2 id="contact-titre">Contactez-nous</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="nom">Nom complet</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              required
+              aria-required="true"
+              pattern="[A-Za-zÀ-ÿ\s]{2,}"
+              title="Votre nom complet (minimum 2 caractères)"
+            />
+            <span class="form-hint">Minimum 2 caractères</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Exemple : nom@domaine.com"
+            />
+            <span class="form-hint">Format : nom@domaine.com</span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="footer-content">
+        <div class="company-info">
+          <h2>Contactez-nous</h2>
+          <address>
+            <p>CocoCorp</p>
+            <p>02 Place de l'Europe</p>
+            <p>31100 Toulouse, France</p>
+            <p>Tél : <a href="tel:+33123456789">01 02 03 04 05</a></p>
+            <p>
+              Email :
+              <a href="mailto:contact@cococorp.fr">contact@cococorp.fr</a>
+            </p>
+          </address>
+        </div>
+        <div class="mentions-legales">
+          <h2>Mentions légales</h2>
+          <p>© 2024 CocoCorp. Tous droits réservés.</p>
+        </div>
+        <nav aria-label="Liens utiles">
+          <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Plan du site</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

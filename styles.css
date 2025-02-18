@@ -1,0 +1,419 @@
+/* ==========================================================================
+   Base et Reset
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ==========================================================================
+   Accessibilité
+   ========================================================================== */
+:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ==========================================================================
+   En-tête et Navigation
+   ========================================================================== */
+header {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation principale */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #4a90e2;
+}
+
+/* ==========================================================================
+   Logo et Branding
+   ========================================================================== */
+.logo svg {
+  overflow: visible;
+}
+
+.logo text {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Animation du logo */
+.logo svg path {
+  transition: fill 0.3s ease;
+}
+
+.logo:hover svg path:first-child {
+  fill: #357abd;
+}
+
+.logo:hover svg path:last-child {
+  fill: #4a90e2;
+}
+
+/* ==========================================================================
+   Sections de contenu
+   ========================================================================== */
+section {
+  padding: 4rem 2rem;
+}
+
+/* ==========================================================================
+   Formulaires
+   ========================================================================== */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: #4a90e2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: #357abd;
+}
+
+/* ==========================================================================
+   Tableau comparatif
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+th:hover,
+td:hover,
+th:focus,
+td:focus {
+  background-color: #f8f9fa;
+  cursor: pointer;
+  outline: none;
+}
+
+th:focus-visible,
+td:focus-visible {
+  box-shadow: inset 0 0 0 2px #4a90e2;
+  position: relative;
+  z-index: 1;
+}
+
+/* Styles spécifiques pour les en-têtes */
+th[scope="col"],
+th[scope="row"] {
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+th[scope="col"]:hover,
+th[scope="col"]:focus,
+th[scope="row"]:hover,
+th[scope="row"]:focus {
+  background-color: #e9ecef;
+}
+
+/* Styles pour les cellules du pied de tableau */
+tfoot td {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+tfoot td:hover,
+tfoot td:focus {
+  background-color: #e9ecef;
+}
+
+.promo {
+  font-size: 0.8em;
+  color: #2ecc71;
+  margin-left: 0.5rem;
+}
+
+thead th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+tbody th {
+  font-weight: normal;
+}
+
+tfoot {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Pied de page
+   ========================================================================== */
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Styles pour la section valeurs */
+.valeurs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.valeurs-container article {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.valeurs-container article:hover,
+.valeurs-container article:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.valeurs-container article:focus-visible {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover,
+.icon:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.icon:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+.valeurs-container h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .valeurs-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tableau - Icônes de validation */
+.check,
+.cross {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.check {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.cross {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+}
+
+.check:hover,
+.check:focus,
+.cross:hover,
+.cross:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.check:focus-visible {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2ecc71;
+}
+
+.cross:focus-visible {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #e74c3c;
+}
+
+/* Amélioration de l'accessibilité du tableau */
+th[scope="col"],
+th[scope="row"] {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+th[scope="col"]:hover,
+th[scope="col"]:focus,
+th[scope="row"]:hover,
+th[scope="row"]:focus {
+  background-color: #e9ecef;
+}
+
+th[scope="col"]:focus-visible,
+th[scope="row"]:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: -2px;
+}
+
+/* Pour améliorer l'accessibilité mobile */
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .check,
+  .cross {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+/* Styles pour les informations de contact */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Styles pour le formulaire */
+.form-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: #e74c3c;
+}
+
+/* Styles pour l'adresse */
+address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+address a:hover,
+address a:focus {
+  text-decoration: underline;
+}
