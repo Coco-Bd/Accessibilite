@@ -423,43 +423,14 @@ address a:focus {
   max-width: 800px;
   margin: 2rem auto;
   position: relative;
-  z-index: 1;
-  isolation: isolate;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  padding: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 video {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: normal;
-  isolation: isolate;
-  background: transparent;
-  filter: none;
-  -webkit-filter: none;
-  border-radius: 12px;
-}
-
-/* Supprimer tous les styles personnalisés des contrôles */
-video::-webkit-media-controls,
-video::-webkit-media-controls-enclosure,
-video::-webkit-media-controls-panel,
-video::-webkit-media-controls-overlay-play-button,
-video::-webkit-media-controls-play-button,
-video::-webkit-media-controls-timeline,
-video::-webkit-media-controls-current-time-display,
-video::-webkit-media-controls-time-remaining-display,
-video::-webkit-media-controls-time-remaining-display,
-video::-webkit-media-controls-mute-button,
-video::-webkit-media-controls-toggle-closed-captions-button,
-video::-webkit-media-controls-volume-slider {
-  display: default !important;
-  background: none !important;
-  filter: none !important;
+  background: #000; /* Fond noir pour meilleur contraste */
 }
