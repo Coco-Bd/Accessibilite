@@ -1,4 +1,20 @@
-# CocoCorp - Solutions Digitales Responsables 🌱
+# EcoSuite by CocoCorp - Gestion Éco-responsable 🌱
+
+EcoSuite est une suite logicielle de gestion d'entreprise éco-responsable qui permet de :
+
+- Optimiser la gestion des ressources
+- Suivre l'empreinte carbone en temps réel
+- Générer des rapports RSE automatisés
+- Réduire les coûts énergétiques
+
+## Fonctionnalités clés
+
+- **Tableau de bord énergétique** : Suivi en temps réel
+- **Gestion des ressources** : Optimisation automatisée
+- **Rapports RSE** : Génération automatique
+- **Analytics environnemental** : Métriques détaillées
+- **API éco-conçue** : Intégration facile
+- **Support multilingue** : FR, EN, ES, DE
 
 ![Logo CocoCorp](assets/images/logo.png)
 
