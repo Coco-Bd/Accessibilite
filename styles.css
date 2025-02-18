@@ -422,12 +422,22 @@ address a:focus {
 .video-container {
   max-width: 800px;
   margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
 }
 
 video {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: normal;
+  isolation: isolate;
+  background: transparent;
+  filter: none;
+  -webkit-filter: none;
 }
 
 /* Supprimer tous les styles personnalisés des contrôles */
