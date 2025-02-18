@@ -16,6 +16,17 @@
       href="assets/images/video-poster.webp"
       type="image/webp"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/video-poster-1024.webp"
+      type="image/webp"
+      media="(min-width: 768px)"
+    />
+    <meta property="og:image" content="assets/images/video-poster-1024.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="576" />
   </head>
   <body>
     <!-- En-tête du site -->
@@ -190,19 +201,23 @@
         <div class="video-container">
           <picture>
             <source
-              srcset="assets/images/video-poster.webp"
+              srcset="
+                assets/images/video-poster-480.webp   480w,
+                assets/images/video-poster-768.webp   768w,
+                assets/images/video-poster-1024.webp 1024w
+              "
+              sizes="(max-width: 480px) 480px,
+                     (max-width: 768px) 768px,
+                     1024px"
               type="image/webp"
             />
-            <source srcset="assets/images/video-poster.png" type="image/png" />
             <video
               id="presentation-video"
               controls
               width="100%"
               preload="metadata"
-              poster="assets/images/video-poster.png"
+              poster="assets/images/video-poster-1024.webp"
               playsinline
-              autoplay
-              muted
             >
               <source
                 src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
