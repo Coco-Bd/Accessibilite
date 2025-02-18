@@ -159,9 +159,10 @@
             width="100%"
             preload="metadata"
             poster="assets/images/video-poster.jpg"
+            id="presentation-video"
           >
             <source
-              src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4#t=0,30"
+              src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
               type="video/mp4"
             />
             <track
@@ -437,5 +438,24 @@
         </nav>
       </div>
     </footer>
+
+    <!-- Ajouter ce script juste avant la fermeture de </body> -->
+    <script>
+      document
+        .getElementById("presentation-video")
+        .addEventListener("loadedmetadata", function () {
+          this.currentTime = 0;
+          this.duration = Math.min(this.duration, 30);
+        });
+
+      document
+        .getElementById("presentation-video")
+        .addEventListener("timeupdate", function () {
+          if (this.currentTime >= 30) {
+            this.pause();
+            this.currentTime = 0;
+          }
+        });
+    </script>
   </body>
 </html>
