@@ -428,12 +428,6 @@ video {
   display: block;
   width: 100%;
   height: auto;
-  /* Forcer la vidéo à s'afficher sans aucun filtre ou effet */
-  filter: none !important;
-  opacity: 1 !important;
-  mix-blend-mode: normal !important;
-  background: none !important;
-  -webkit-filter: none !important;
 }
 
 /* Supprimer tous les styles personnalisés des contrôles */
