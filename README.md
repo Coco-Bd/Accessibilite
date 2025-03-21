@@ -28,13 +28,13 @@ Une landing page moderne et accessible pour CocoCorp, entreprise spécialisée d
 
 ## 📋 Sommaire
 
-1. [Aperçu](#aperçu)
-2. [Fonctionnalités](#fonctionnalités)
-3. [Technologies utilisées](#technologies-utilisées)
-4. [Accessibilité](#accessibilité)
-5. [Installation](#installation)
-6. [Structure du projet](#structure-du-projet)
-7. [Captures d'écran](#captures-décran)
+- [Aperçu](#apercu)
+- [Fonctionnalités](#fonctionnalites)
+- [Technologies utilisées](#technologies-utilisées)
+- [Accessibilité](#accessibilite)
+- [Installation](#installation)
+- [Structure du projet](#structure-du-projet)
+- [Captures d'écran](#captures-decran)
 
 ## 🎯 Aperçu
 
