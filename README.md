@@ -28,13 +28,13 @@ Une landing page moderne et accessible pour CocoCorp, entreprise spécialisée d
 
 ## 📋 Sommaire
 
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies utilisées](#technologies-utilisées)
-- [Accessibilité](#accessibilité)
-- [Installation](#installation)
-- [Structure du projet](#structure-du-projet)
-- [Captures d'écran](#captures-décran)
+1. [Aperçu](#aperçu)
+2. [Fonctionnalités](#fonctionnalités)
+3. [Technologies utilisées](#technologies-utilisées)
+4. [Accessibilité](#accessibilité)
+5. [Installation](#installation)
+6. [Structure du projet](#structure-du-projet)
+7. [Captures d'écran](#captures-décran)
 
 ## 🎯 Aperçu
 
@@ -63,7 +63,7 @@ CocoCorp est une entreprise innovante proposant des solutions digitales responsa
 - Validation de formulaire native
 - Pas de dépendances JavaScript
 
-## ♿ Accessibilité
+## 🚹🚺♿ Accessibilité
 
 ![Score d'accessibilité](assets/images/accessibility-score.png)
 ![Test validator.w3 ](assets/images/validatorW3.png)
